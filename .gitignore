@@ -16,3 +16,9 @@ wordle-config.php
 # Logs can contain queries, paths and player data
 *.log
 error_log
+
+# Editor and deployment settings (includes server details)
+.nova/
+
+# macOS
+.DS_Store
