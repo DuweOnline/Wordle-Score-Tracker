@@ -1,0 +1,18 @@
+# Real settings (DB login, Dropbox keys, birthdays).
+# Copy wordle-config.sample.php to wordle-config.php and fill it in.
+wordle-config.php
+.env
+.env.*
+
+# Database dumps and backups
+*.sql
+*.sql.gz
+*.sql.zip
+*.dump
+*.sqlite
+*.sqlite3
+*.bak
+
+# Logs can contain queries, paths and player data
+*.log
+error_log
