@@ -4,6 +4,10 @@ A small, self-hosted scoreboard for a group of friends or family playing [Wordle
 
 It's plain PHP and MySQL, with no build step and no Composer dependencies.
 
+![Wordle Tracker showing fictional demo players: a score form beside this week's leaderboard](docs/screenshot.jpg)
+
+The players and scores in this screenshot are made up.
+
 ## Features
 
 - **Paste to record:** pick a player and paste the share text. The date comes from the puzzle number, so a late entry still lands on the right day.
@@ -30,6 +34,8 @@ The page loads Tailwind CSS and Chart.js from public CDNs, so browsers need inte
 .
 ├── wordle-config.sample.php   Template for your settings
 ├── wordle-config.php          Your real settings (git-ignored, create this yourself)
+├── LICENSE                    MIT License
+├── docs/screenshot.jpg        Demo screenshot used in this README
 └── public_html/wordle/
     ├── index.php              The app: form handling, stats and page
     ├── db.php                 Loads the config and connects to the database
@@ -116,3 +122,7 @@ Then open <http://localhost:8000/wordle/index.php>.
 - **There's no login.** Anyone who can open the page can add, reassign or delete scores. If it's on the public internet, put it behind HTTP authentication or another access control.
 - **Don't commit real data.** `.gitignore` excludes the real config, SQL dumps, logs and deployment settings. Keep credentials and birthdays in `wordle-config.php`.
 - **Form protection:** form submissions use CSRF tokens, and the app's user-input queries use prepared statements.
+
+## License
+
+Released under the [MIT License](LICENSE).
