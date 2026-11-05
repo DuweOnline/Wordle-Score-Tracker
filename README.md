@@ -125,4 +125,4 @@ Then open <http://localhost:8000/wordle/index.php>.
 
 ## License
 
-Released under the [MIT License](LICENSE).
+Wordle Tracker is released under the [MIT License](LICENSE), © 2026 Mark Duwe. You can use, change and share it freely, including commercially, as long as you keep the copyright and licence notice in all copies or substantial portions of the code.
